@@ -15,8 +15,17 @@ Priority goes to players with the fewest recorded individual games. Ties are sho
 
 Run `python -m http.server 8000` from the project root and visit `http://127.0.0.1:8000/`. The JSON fetches require a web server, so opening `index.html` directly as a file will not work.
 
-## Publish
+## Deploy to GitHub Pages
 
-The GitHub Actions workflow in `.github/workflows/pages.yml` deploys the repository on pushes to `main`. In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions** once. The site URL is `https://findsje.github.io/AdvaniaITCrowd/`.
+### One-time setup
+
+1. Open the repository's [Settings → Pages](https://github.com/findsje/AdvaniaITCrowd/settings/pages). You need admin or maintainer access to change the publishing source.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**. The deployment workflow already exists at `.github/workflows/pages.yml`; there is no need to create another workflow.
+3. Open [Actions → Deploy GitHub Pages](https://github.com/findsje/AdvaniaITCrowd/actions/workflows/pages.yml). If no deployment starts after changing the source, select **Run workflow**, choose `main`, and run it.
+4. Wait for the workflow to finish successfully, then open [the site](https://findsje.github.io/AdvaniaITCrowd/). GitHub Pages may take up to 10 minutes to show a new deployment.
+
+### Publish later changes
+
+Edit the files, commit, and push to `main` (for a normal clone: `git push origin main`). A successful push runs the Pages workflow automatically. Edits committed directly on GitHub to `main` also trigger it. Check the [workflow runs](https://github.com/findsje/AdvaniaITCrowd/actions/workflows/pages.yml) if the site does not update.
 
 The schedule is linked to the [KLÍ Riðill 2 page](https://www.kli.is/utandeild/ridill-2/). The first-round scores were transcribed from `src/img/okt11results.webp`; the round date follows the team's supplied date of 14 October 2026.
