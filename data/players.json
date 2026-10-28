@@ -1,0 +1,12 @@
+[
+  { "id": "sigurdur-jonas-eggertsson", "name": "Sigurður Jónas Eggertsson", "roleIs": "Hugbúnaðarsérfræðingur", "roleEn": "Software Specialist" },
+  { "id": "sigurthor-petursson", "name": "Sigurþór Pétursson", "roleIs": "Hugbúnaðarsérfræðingur", "roleEn": "Software Specialist" },
+  { "id": "kristinn-gudnason", "name": "Kristinn Guðnason", "roleIs": "Þróunarstjóri", "roleEn": "Development Lead" },
+  { "id": "eirikur-atli-briem", "name": "Eiríkur Atli Briem", "roleIs": "Hugbúnaðarsérfræðingur", "roleEn": "Software Specialist" },
+  { "id": "halldor-mar-freysson", "name": "Halldór Már Freysson", "roleIs": "Hópstjóri", "roleEn": "Team Leader" },
+  { "id": "kristjan-ingi-einarsson", "name": "Kristján Ingi Einarsson", "roleIs": "Forritari", "roleEn": "Programmer" },
+  { "id": "halldor-gudnason", "name": "Halldór Guðnason", "roleIs": "Hugbúnaðarsérfræðingur", "roleEn": "Software Specialist" },
+  { "id": "ivar-markusson", "name": "Ívar Markússon", "roleIs": "Hugbúnaðarsérfræðingur", "roleEn": "Software Specialist" },
+  { "id": "brynjar-orn-baldvinsson", "name": "Brynjar Örn Baldvinsson", "roleIs": "Kerfisstjóri", "roleEn": "System Administrator" },
+  { "id": "thorbjorg-hekla-ingolfsdottir", "name": "Þorbjörg Hekla Ingólfsdóttir", "roleIs": "Deildarstjóri", "roleEn": "Team Manager" }
+]

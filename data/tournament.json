@@ -1,0 +1,34 @@
+{
+  "name": "KLÍ Utandeild",
+  "season": "2026–2027",
+  "schedule": [
+    { "number": 1, "date": "2026-10-14", "time": "19:00", "status": "completed" },
+    { "number": 2, "date": "2026-11-11", "time": "19:00", "status": "scheduled" },
+    { "number": 3, "date": "2027-01-13", "time": "19:00", "status": "scheduled" },
+    { "number": 4, "date": "2027-02-10", "time": "19:00", "status": "scheduled" },
+    { "number": 5, "date": "2027-03-10", "time": "19:00", "status": "scheduled" }
+  ],
+  "rounds": [
+    {
+      "date": "2026-10-14",
+      "status": "completed",
+      "games": [
+        { "number": 1, "scores": [
+          { "playerId": "halldor-mar-freysson", "points": 94 },
+          { "playerId": "sigurthor-petursson", "points": 88 },
+          { "playerId": "sigurdur-jonas-eggertsson", "points": 103 }
+        ] },
+        { "number": 2, "scores": [
+          { "playerId": "halldor-mar-freysson", "points": 113 },
+          { "playerId": "kristinn-gudnason", "points": 92 },
+          { "playerId": "halldor-gudnason", "points": 112 }
+        ] },
+        { "number": 3, "scores": [
+          { "playerId": "sigurthor-petursson", "points": 78 },
+          { "playerId": "kristinn-gudnason", "points": 71 },
+          { "playerId": "halldor-gudnason", "points": 129 }
+        ] }
+      ]
+    }
+  ]
+}

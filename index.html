@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d24">
+  <meta name="description" content="Leikir, skor og leikjaforgangur Advania IT Crowd í KLÍ Utandeild.">
+  <title>Advania IT Crowd · Keiluliðið</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./schedule.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Advania IT Crowd, efst á síðu">
+        <img src="./src/img/Glossy%20Advania%20IT%20Crowd%20Bowling%20Badge.png" alt="" width="64" height="64">
+        <span>ADVANIA <strong>IT CROWD</strong><small>KEILULIÐIÐ</small></span>
+      </a>
+      <nav aria-label="Aðalvalmynd"><a href="#dagskra">Dagskrá</a><a href="#forgangur">Forgangur</a><a href="#leikmenn">Leikmenn</a><a href="#urslit">Úrslit</a></nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> KLÍ UTANDEILD <span class="eyebrow-line"></span> <span id="season">2026–2027</span></p>
+          <h1 id="hero-title">Kóðum.<br>Keilum.<br><em>Keppum.</em></h1>
+          <p class="hero-description">Allt um Advania IT Crowd á einum stað. Fylgstu með leikjum, skorum og hver á forgang í næstu umferð.</p>
+          <a class="primary-link" href="#forgangur">Skoða forgang <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-halo"></div>
+          <img src="./src/img/Glossy%20Advania%20IT%20Crowd%20Bowling%20Badge.png" alt="">
+          <span class="orbit-label orbit-label-one">STRIKE_01</span><span class="orbit-label orbit-label-two">// TEAM MODE: ON</span>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Yfirlit">
+        <div class="next-card panel">
+          <div class="section-kicker">NÆSTA UMFERÐ <span class="arrow-icon" aria-hidden="true">↗</span></div>
+          <div class="next-date" id="next-date">11. nóvember</div>
+          <p>KLÍ Utandeild <span class="subtle-separator">/</span> <span id="next-year">2026</span></p>
+          <div class="card-footer"><span class="calendar-icon" aria-hidden="true">▦</span> Næsti leikdagur</div>
+        </div>
+        <div class="stat-card panel"><div class="section-kicker">LEIKMENN</div><div class="stat-number" id="player-count">10</div><p>í hópnum</p><div class="stat-spark" aria-hidden="true">● ● ● ● ●</div></div>
+        <div class="stat-card panel"><div class="section-kicker">LEIKIR SPILAÐIR</div><div class="stat-number" id="game-count">9</div><p>einstaklingsleikir</p><div class="stat-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="stat-card panel"><div class="section-kicker">HEILDARSTIG</div><div class="stat-number" id="points-count">880</div><p>samtals í fyrstu umferð</p><div class="stat-spark cyan" aria-hidden="true">✦ ✦ ✦</div></div>
+      </section>
+
+      <section class="content-section schedule-section" id="dagskra">
+        <div class="section-heading"><div><p class="eyebrow">01 / KEPPNIN</p><h2>Fimm <em>umferðir.</em></h2></div><p>Þrír leikir í hverri umferð. <a href="https://www.kli.is/utandeild/ridill-2/" target="_blank" rel="noopener noreferrer">Sjá dagskrá hjá KLÍ ↗</a></p></div>
+        <div class="schedule-list panel" id="schedule-list" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section" id="forgangur">
+        <div class="section-heading"><div><p class="eyebrow">02 / LIÐSSKIPAN</p><h2>Hver á <em>forgang?</em></h2></div><p>Þeir sem hafa spilað fæsta leiki eru efstir. Jafnir leikmenn raðast í stafrófsröð.</p></div>
+        <div class="priority-grid" id="priority-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section" id="leikmenn">
+        <div class="section-heading"><div><p class="eyebrow">03 / HÓPURINN</p><h2>Allir <em>leikmenn.</em></h2></div><p>Leikjafjöldi og skor reiknast sjálfkrafa út frá skráðum umferðum.</p></div>
+        <div class="roster-panel panel"><div class="roster-header"><span>LEIKMAÐUR</span><span>LEIKIR</span><span>HEILDARSTIG</span><span>MEÐALTAL</span></div><div id="roster" aria-live="polite"></div></div>
+      </section>
+
+      <section class="content-section results-section" id="urslit">
+        <div class="section-heading"><div><p class="eyebrow">04 / SÍÐASTA UMFERÐ</p><h2>Leikur í <em>tölum.</em></h2></div><p id="last-round-date">14. október 2026</p></div>
+        <div class="results-layout"><div class="results-panel panel"><div class="results-title"><span>STIG EFTIR LEIK</span><span>HEILDARSTIG</span></div><div id="game-results"></div></div><div class="result-highlight panel"><div class="section-kicker">HEILDARSTIG Í UMFERÐ</div><div class="big-total" id="round-total">880</div><p>stig í þremur leikjum</p><div class="highlight-divider"></div><div class="section-kicker">HÆSTI EINSTAKLINGSLEIKUR</div><div class="best-score" id="best-score">129</div><p id="best-player">Halldór Guðnason</p></div></div>
+      </section>
+    </main>
+    <footer><span>© <span id="footer-year">2026</span> Advania IT Crowd</span><span>CODE. BOWL. REPEAT. <span class="footer-star">✦</span></span></footer>
+  </div>
+</body>
+</html>
